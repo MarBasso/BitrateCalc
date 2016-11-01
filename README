@@ -2,3 +2,10 @@ This is a fork of original jarrettv work, please refer to his GitHub repository 
 
 BitrateCalc is a practical calculator with Windows GUI that allows you to calculate all parameters you need to convert, compress or improve the quality of your favourite videos.
 It can be used with all video encoders, such as Handbrake, mkvmerge, etc.
+
+The project is based on Visual Studio and the code used is C#.
+If you want a ready to use version:
+- Download BitrateCalc.zip file;
+- Extract where you want on your PC;
+- Execute BitrateCalc.exe or create a shortcut on your desktop to it to use the program;
+- Enjoy!
