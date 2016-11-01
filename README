@@ -1,5 +1,4 @@
 This is a fork of original jarrettv work, please refer to his GitHub repository for more informations.
 
-0.7 Fixed bitrate calculation
-0.6 Added preset support
-0.5 Initial release
+BitrateCalc is a practical calculator with Windows GUI that allows you to calculate all parameters you need to convert, compress or improve the quality of your favourite videos.
+It can be used with all video encoders, such as Handbrake, mkvmerge, etc.
