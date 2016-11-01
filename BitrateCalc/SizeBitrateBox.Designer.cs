@@ -43,7 +43,6 @@
             this.NumUpDown.Size = new System.Drawing.Size(105, 20);
             this.NumUpDown.TabIndex = 0;
             this.NumUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.NumUpDown.ThousandsSeparator = true;
             this.NumUpDown.ValueChanged += new System.EventHandler(this.NumUpDown_ValueChanged);
             this.NumUpDown.Click += new System.EventHandler(this.NumUpDown_Focus);
             this.NumUpDown.Enter += new System.EventHandler(this.NumUpDown_Focus);
@@ -54,7 +53,7 @@
             this.UnitSwitch.Dock = System.Windows.Forms.DockStyle.Right;
             this.UnitSwitch.Location = new System.Drawing.Point(108, 0);
             this.UnitSwitch.Name = "UnitSwitch";
-            this.UnitSwitch.Size = new System.Drawing.Size(42, 150);
+            this.UnitSwitch.Size = new System.Drawing.Size(42, 25);
             this.UnitSwitch.TabIndex = 1;
             this.UnitSwitch.Text = "kbps";
             this.UnitSwitch.UseVisualStyleBackColor = true;
@@ -64,10 +63,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.Controls.Add(this.UnitSwitch);
             this.Controls.Add(this.NumUpDown);
             this.Name = "SizeBitrateBox";
+            this.Size = new System.Drawing.Size(150, 25);
             ((System.ComponentModel.ISupportInitialize)(this.NumUpDown)).EndInit();
             this.ResumeLayout(false);
 

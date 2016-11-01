@@ -329,7 +329,6 @@ namespace BitrateCalc
             this.frames.Name = "frames";
             this.frames.Size = new System.Drawing.Size(80, 21);
             this.frames.TabIndex = 5;
-            this.frames.ThousandsSeparator = true;
             this.frames.ValueChanged += new System.EventHandler(this.frames_Changed);
             // 
             // bframes
@@ -548,15 +547,15 @@ namespace BitrateCalc
             // 
             // videoSize
             // 
-            this.videoSize.AutoSize = true;
             this.videoSize.Location = new System.Drawing.Point(19, 45);
             this.videoSize.Name = "videoSize";
             this.videoSize.ReadOnly = true;
-            this.videoSize.Size = new System.Drawing.Size(122, 24);
+            this.videoSize.Size = new System.Drawing.Size(122, 25);
             this.videoSize.SizeUnit = BitrateCalc.SizeUnit.Kbps;
             this.videoSize.TabIndex = 16;
             this.videoSize.TabStop = false;
             this.videoSize.ValueChanged += new System.EventHandler(this.value_Changed);
+            this.videoSize.Load += new System.EventHandler(this.videoSize_Load);
             // 
             // bppRadio
             // 
@@ -641,7 +640,6 @@ namespace BitrateCalc
             // 
             // totalSize
             // 
-            this.totalSize.AutoSize = true;
             this.totalSize.Location = new System.Drawing.Point(19, 220);
             this.totalSize.Name = "totalSize";
             this.totalSize.ReadOnly = false;
@@ -649,6 +647,7 @@ namespace BitrateCalc
             this.totalSize.SizeUnit = BitrateCalc.SizeUnit.GB;
             this.totalSize.TabIndex = 16;
             this.totalSize.ValueChanged += new System.EventHandler(this.value_Changed);
+            this.totalSize.Load += new System.EventHandler(this.totalSize_Load);
             // 
             // presetLink
             // 
@@ -833,6 +832,16 @@ namespace BitrateCalc
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void totalSize_Load(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+        }
+
+        private void videoSize_Load(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
         }
 
         private ComboBox framerate;
